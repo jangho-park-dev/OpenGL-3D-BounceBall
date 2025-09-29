@@ -292,26 +292,14 @@ std::vector<GLubyte*> m_bitmap;   // 비트맵 데이터를 가리킬 포인터
 std::vector<GLuint> texture;
 
 
-
-
-
-
-
-
 std::vector<BITMAPINFO*> backgroundBitmapInfo;   // 비트맵 헤더 저장할 변수
 std::vector<GLubyte*> backgroundBitmapData;   // 비트맵 데이터를 가리킬 포인터
 std::vector<GLuint> backgroundBitmapTexture;
 
 
-
-
 std::vector<BITMAPINFO*> backgroundBitmapInfo2;   // 비트맵 헤더 저장할 변수
 std::vector<GLubyte*> backgroundBitmapData2;   // 비트맵 데이터를 가리킬 포인터
 std::vector<GLuint> backgroundBitmapTexture2;
-
-
-
-
 
 
 std::vector<BITMAPINFO*> uIBitmapInfo;   // 비트맵 헤더 저장할 변수
@@ -389,14 +377,6 @@ void initLighting()
 	glLightfv(GL_LIGHT3, GL_AMBIENT, qaAmbientLight);
 	glLightfv(GL_LIGHT3, GL_DIFFUSE, qaDiffuseLight);
 	glLightfv(GL_LIGHT3, GL_SPECULAR, qaSpecularLight);
-	//glLightfv(GL_LIGHT3, GL_POSITION, lightPos);
-
-	//glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, qaGreen);
-	//glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, qaGreen);
-	//glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, qaWhite);
-	//glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, 0.2);
-
-
 
 	qaSpotLightPosition[0] = bounceBall->Position().x;
 	qaSpotLightPosition[1] = bounceBall->Position().y + 100;
@@ -409,30 +389,16 @@ void initLighting()
 	glLightfv(GL_LIGHT4, GL_SPECULAR, qaSpecularLight);
 
 
-
-
 	glLightfv(GL_LIGHT4, GL_POSITION, qaSpotLightPosition);
 	glLightfv(GL_LIGHT4 , GL_SPOT_DIRECTION, qaSpotLightDirection);
 	glLightf(GL_LIGHT4, GL_SPOT_CUTOFF, spotLightDegree);
 	glLightf(GL_LIGHT4 , GL_SPOT_EXPONENT, spotLightExponent);
 
 
-
-
-	//glTranslatef(5.0, 200.0, -350.0);
-
 	// Set the light position
-
 	glLightfv(GL_LIGHT3, GL_POSITION, qaLightPosition);
-	//glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, emitLight);   // Make sphere glow (emissive) 
-	//glutSolidSphere(size / 6, 25, 25);
-	//glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, Noemit);
-
-	//glDisable(GL_LIGHTING);
-	//glDisable(GL_LIGHT0);
+	
 	glEnable(GL_DEPTH_TEST);
-
-
 }
 
 int main(int argc, char **argv)
@@ -508,12 +474,12 @@ void display(void)
 		for (int i = 0; i < map1_index; ++i)
 		{
 			cubes[i].DrawTextureCube(50, texture[currentStageIndex]);
-
 		}
 		glDisable(GL_LIGHTING);
 		if (quadOrSphereMap)
 		{
-			backgroundCube->DrawTextureCube2(5000, backgroundBitmapTexture[currentStageIndex],backgroundBitmapTexture2[currentStageIndex]);
+			backgroundCube->DrawTextureCube2(5000, 
+				backgroundBitmapTexture[currentStageIndex],backgroundBitmapTexture2[currentStageIndex]);
 		}
 		else
 		{
@@ -521,14 +487,11 @@ void display(void)
 
 		}
 		glEnable(GL_LIGHTING);
-
-
 		glDisable(GL_TEXTURE_2D);
 
 		for (int i = 0; i < star1_index; ++i)
 		{
 			stars[i].DrawStar(50);
-
 		}
 
 
@@ -1035,10 +998,7 @@ void TimerFunc(int value)
 
 void Start()
 {
-
-
 	srand((unsigned)time(NULL));
-
 
 	masterMatrix->thisCamera.eyeY += 1000.0;
 	masterMatrix->thisCamera.eyeZ += 1000.0;
@@ -1046,22 +1006,13 @@ void Start()
 	simpleGameState = LogoState;
 
 	LoadStage(currentStageIndex);
-
-
-
 	LoadResource();
 
-
-
-
-
-	bounceBall->InitializeBall(50, false, false, GLVector3(0, 0, 0), GLVector3(0, 15, 0), 1);
+	bounceBall->InitializeBall(50, false, false, 
+		GLVector3(0, 0, 0), GLVector3(0, 15, 0), 1);
 	bounceBall->boundingBoxSize = 45;
 
 	testClass2->color4D = GLVector4(0.7, 0.5, 0, 1);
-
-
-
 }
 
 void Mouse(int button, int state, int x, int y)
@@ -1925,17 +1876,12 @@ void LoadStage(int stageNumber)
 	}
 	fclose(fp_map1);
 
-
-
-
 	fopen_s(&fp_star1, str2.c_str(), "r");
 	while (fscanf_s(fp_star1, "%lf %lf %lf", &(star_1[star1_index].x), &(star_1[star1_index].y), &(star_1[star1_index].z)) != EOF)
 	{
 		star1_index++;
 	}
 	fclose(fp_star1);
-
-
 
 	for (int i = 0; i < map1_index; i++)
 	{
