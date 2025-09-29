@@ -1,0 +1,36 @@
+﻿  bounceBall.cpp
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun3.h(2): warning C4005: 'MAX_LIST_SIZE': 매크로 재정의
+  c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun.h(2): note: 'MAX_LIST_SIZE'의 이전 정의를 참조하십시오.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(260): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(260): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(270): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(270): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(355): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(355): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(365): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\comgfun2.h(365): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\projectlibrary.h(791): warning C4244: 'return': 'GLdouble'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\projectlibrary.h(798): warning C4244: '인수': 'GLdouble'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\projectlibrary.h(809): warning C4244: '인수': 'GLdouble'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\projectlibrary.h(3684): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(16): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(19): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(337): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(342): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(347): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(401): warning C4244: '=': 'GLdouble'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(402): warning C4244: '=': 'GLdouble'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(403): warning C4244: '=': 'GLdouble'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1382): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1387): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1392): warning C4244: '-=': 'double'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1811): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1826): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1841): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1858): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1886): warning C4244: '인수': 'double'에서 'const GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1890): warning C4244: '인수': 'double'에서 'const GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1943): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(1956): warning C4018: '<=': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\jangho\desktop\최종_박민욱_박장호\기말텀프\source\bounceball.cpp(2198): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  ComgTermProject.vcxproj -> C:\Users\JangHo\Desktop\최종_박민욱_박장호\기말텀프\Debug\ComgTermProject.exe
